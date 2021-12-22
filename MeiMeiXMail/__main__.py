@@ -52,7 +52,7 @@ async def initiate_bot():
         await asyncio.sleep(1.2)
         for all_module in ALL_MODULES:
             imported_module = importlib.import_module(
-                "MeiMei.Plugins." + all_module
+                "MeiMeiXMail.Plugins." + all_module
             )
             if (
                 hasattr(imported_module, "__MODULE__")
